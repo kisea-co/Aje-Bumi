@@ -2,12 +2,16 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Aje Bumi | Jewelry as lineage, memory, and form",
+  title: "Ajé Bumi | Adornment, memory, and becoming",
   description:
-    "Aje Bumi is a jewelry house rooted in lineage, sacred femininity, craftsmanship, and permanence.",
+    "Ajé Bumi is a jewelry house shaped by sacred femininity, water, memory, ritual, and adornment.",
 };
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
     <html lang="en">
       <body>{children}</body>

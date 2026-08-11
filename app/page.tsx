@@ -1,21 +1,23 @@
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
-import { BrandStory } from "@/components/BrandStory";
+import { SacredFeminine } from "@/components/SacredFeminine";
 import { CollectionPreview } from "@/components/CollectionPreview";
-import { Craftsmanship } from "@/components/Craftsmanship";
-import { Philosophy } from "@/components/Philosophy";
+import { OceanMemory } from "@/components/OceanMemory";
+import { MaterialRitual } from "@/components/MaterialRitual";
+import { ClosingStatement } from "@/components/ClosingStatement";
 import { Newsletter } from "@/components/Newsletter";
 import { Footer } from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main>
+    <main id="top">
       <Header />
       <Hero />
-      <BrandStory />
+      <SacredFeminine />
       <CollectionPreview />
-      <Craftsmanship />
-      <Philosophy />
+      <OceanMemory />
+      <MaterialRitual />
+      <ClosingStatement />
       <Newsletter />
       <Footer />
     </main>

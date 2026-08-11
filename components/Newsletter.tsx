@@ -1,13 +1,19 @@
 export function Newsletter() {
   return (
-    <section className="newsletter section" id="newsletter">
-      <div>
-        <div className="section-kicker">Private Access</div>
-        <h2>Be first to enter.</h2>
-        <p>Join the list for collection releases, private previews, and notes from the house.</p>
+    <section className="newsletter section" id="private-access">
+      <div className="newsletter-copy">
+        <p className="eyebrow">Private Access</p>
+        <h2>Enter quietly.</h2>
+        <p>
+          Receive collection notes, private previews, and first access when the inaugural offering
+          is ready to be revealed.
+        </p>
       </div>
+
       <form className="newsletter-form" action="#" method="post">
-        <label className="sr-only" htmlFor="email">Email address</label>
+        <label className="sr-only" htmlFor="email">
+          Email address
+        </label>
         <input id="email" name="email" type="email" placeholder="Email address" required />
         <button type="submit">Join the list</button>
       </form>

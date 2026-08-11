@@ -1,29 +1,44 @@
 const cards = [
-  { title: "The First Offering", meta: "Collection preview" },
-  { title: "Forms of Water", meta: "Editorial study" },
-  { title: "Heirloom Objects", meta: "Coming soon" },
+  { number: "01", title: "The First Offering", note: "Collection imagery forthcoming" },
+  { number: "02", title: "Objects of Adornment", note: "Product details forthcoming" },
+  { number: "03", title: "Made to Be Kept", note: "Private preview forthcoming" },
 ];
 
 export function CollectionPreview() {
   return (
     <section className="collection section" id="collection">
-      <div className="section-heading-row">
+      <div className="collection-heading">
         <div>
-          <div className="section-kicker">Collection</div>
-          <h2>Pieces made to be kept.</h2>
+          <p className="eyebrow">Adornment</p>
+          <h2>Objects for moments that matter.</h2>
         </div>
-        <p className="section-aside">Final product details and imagery will be added when client assets are approved.</p>
+        <p className="collection-note">
+          The collection will enter here once final product photography, names, materials, and
+          approved product language are received.
+        </p>
       </div>
+
       <div className="collection-grid">
         {cards.map((card, index) => (
-          <article className="collection-card" key={card.title}>
-            <div className={`collection-image placeholder-${index + 1}`}>Image placeholder</div>
-            <p className="card-meta">{card.meta}</p>
-            <h3>{card.title}</h3>
+          <article className="collection-card" key={card.number}>
+            <div className={`product-placeholder product-${index + 1}`}>
+              <span className="product-number">{card.number}</span>
+              <div className="product-shape" />
+              <small>APPROVED PRODUCT IMAGE</small>
+            </div>
+            <div className="product-caption">
+              <h3>{card.title}</h3>
+              <p>{card.note}</p>
+            </div>
           </article>
         ))}
       </div>
-      <a className="button-link" href="#newsletter">Join the list for collection access</a>
+
+      <div className="collection-footer">
+        <span className="hairline dark" />
+        <a href="#private-access">Join the list for private access</a>
+        <span className="hairline dark" />
+      </div>
     </section>
   );
 }
