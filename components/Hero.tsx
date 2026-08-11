@@ -1,44 +1,39 @@
-import { SunMark } from "./Symbols";
+import Image from "next/image";
+import styles from "./Hero.module.css";
 
 export function Hero() {
   return (
-    <section className="hero">
-      <div className="hero-rail" aria-hidden="true">
-        <span>THE HOUSE OF AJÉ</span>
-        <span>01</span>
-      </div>
-
-      <div className="hero-copy">
-        <div className="hero-symbol-row">
-          <span className="hairline" />
-          <SunMark className="hero-symbol" />
-          <span className="hairline" />
-        </div>
-
-        <p className="eyebrow">Rooted in Ajé · Guided by the waters</p>
-        <h1>
+    <section className={styles.hero}>
+      <div className={styles.copy}>
+        <p className={styles.kicker}>Rooted in ocean · Guided by ancestry</p>
+        <h1 className={styles.title}>
           Adornment for
-          <span>the woman becoming.</span>
+          <em>the woman becoming.</em>
         </h1>
-        <p className="hero-subline">Grace as a form of power.</p>
+        <p className={styles.subline}>Grace as a form of power.</p>
 
-        <div className="hero-actions">
-          <a className="text-link" href="#collection">Discover the first offering</a>
-          <p>Jewelry shaped by memory, material, water, and the quiet language of inheritance.</p>
+        <div className={styles.actions}>
+          <a className={styles.primary} href="#world">
+            Enter the house <span aria-hidden="true">→</span>
+          </a>
+          <a className={styles.secondary} href="#collection">
+            Discover the first offering
+          </a>
         </div>
       </div>
 
-      <div className="hero-visual" role="img" aria-label="Abstract editorial study of silk, water, brass and pearl">
-        <div className="hero-water" />
-        <div className="hero-light hero-light-one" />
-        <div className="hero-light hero-light-two" />
-        <div className="silk-fold silk-one" />
-        <div className="silk-fold silk-two" />
-        <div className="jewel-orbit orbit-one" />
-        <div className="jewel-orbit orbit-two" />
-        <div className="hero-image-label">
-          <span>WATER · LIGHT · ADORNMENT</span>
-          <small>A study in becoming</small>
+      <div className={styles.media}>
+        <Image
+          className={styles.image}
+          src="/images/aje-bumi/hero/hero-house-of-aje.png"
+          alt="Ajé Bumi still life with shell, gold adornment, linen, stone, and ocean water"
+          fill
+          priority
+          sizes="(max-width: 980px) 100vw, 58vw"
+        />
+        <div className={styles.caption}>
+          <span>Water · Memory · Adornment</span>
+          <small>A return to what has always been.</small>
         </div>
       </div>
     </section>
