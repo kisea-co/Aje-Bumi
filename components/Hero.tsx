@@ -4,7 +4,7 @@ export function Hero() {
   return (
     <section className="hero">
       <div className="hero-rail" aria-hidden="true">
-        <span>HOUSE OF AJÉ</span>
+        <span>THE HOUSE OF AJÉ</span>
         <span>01</span>
       </div>
 
@@ -15,7 +15,7 @@ export function Hero() {
           <span className="hairline" />
         </div>
 
-        <p className="eyebrow">Rooted in Ajé. Expressed in her.</p>
+        <p className="eyebrow">Rooted in Ajé · Guided by the waters</p>
         <h1>
           Adornment for
           <span>the woman becoming.</span>
@@ -23,14 +23,13 @@ export function Hero() {
         <p className="hero-subline">Grace as a form of power.</p>
 
         <div className="hero-actions">
-          <a className="text-link" href="#collection">
-            Discover the first offering
-          </a>
-          <p>Jewelry, memory, water, and the quiet language of inheritance.</p>
+          <a className="text-link" href="#collection">Discover the first offering</a>
+          <p>Jewelry shaped by memory, material, water, and the quiet language of inheritance.</p>
         </div>
       </div>
 
-      <div className="hero-visual" role="img" aria-label="Reserved for approved Ajé Bumi Sacred Feminine campaign photography">
+      <div className="hero-visual" role="img" aria-label="Abstract editorial study of silk, water, brass and pearl">
+        <div className="hero-water" />
         <div className="hero-light hero-light-one" />
         <div className="hero-light hero-light-two" />
         <div className="silk-fold silk-one" />
@@ -38,8 +37,8 @@ export function Hero() {
         <div className="jewel-orbit orbit-one" />
         <div className="jewel-orbit orbit-two" />
         <div className="hero-image-label">
-          <span>LIGHT · ADORNMENT</span>
-          <small>Replace with approved Sacred Feminine campaign image</small>
+          <span>WATER · LIGHT · ADORNMENT</span>
+          <small>A study in becoming</small>
         </div>
       </div>
     </section>
