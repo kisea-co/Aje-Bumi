@@ -2,8 +2,8 @@
   min-height: 100svh;
   display: grid;
   grid-template-columns: minmax(0, 0.82fr) minmax(520px, 1.18fr);
-  background: #fbf6f2;
-  border-bottom: 1px solid rgba(59, 36, 24, 0.14);
+  background: #f6f2ef;
+  border-bottom: 1px solid rgba(51, 26, 1, 0.14);
   position: relative;
 }
 
@@ -23,7 +23,7 @@
   font-weight: 600;
   letter-spacing: 0.24em;
   text-transform: uppercase;
-  color: #8b6b53;
+  color: #a1734f;
 }
 
 .title {
@@ -33,7 +33,7 @@
   font-weight: 400;
   letter-spacing: -0.055em;
   line-height: 0.85;
-  color: #3b2418;
+  color: #331a01;
   max-width: 7ch;
 }
 
@@ -41,7 +41,7 @@
   display: block;
   margin-top: 0.18em;
   font-weight: 400;
-  color: #b07a5a;
+  color: #963c1a;
 }
 
 .subline {
@@ -51,7 +51,7 @@
   font-size: clamp(1.2rem, 1.7vw, 1.65rem);
   line-height: 1.45;
   font-style: italic;
-  color: #8b6b53;
+  color: #a1734f;
 }
 
 .actions {
@@ -68,7 +68,7 @@
   gap: 36px;
   min-width: 245px;
   padding: 16px 18px;
-  border: 1px solid rgba(59, 36, 24, 0.42);
+  border: 1px solid rgba(51, 26, 1, 0.42);
   font-family: "Avenir Next", Avenir, "Helvetica Neue", Arial, sans-serif;
   font-size: 0.66rem;
   font-weight: 600;
@@ -78,9 +78,9 @@
 }
 
 .primary:hover {
-  background: #3b2418;
-  border-color: #3b2418;
-  color: #fbf6f2;
+  background: #331a01;
+  border-color: #331a01;
+  color: #f6f2ef;
 }
 
 .secondary {
@@ -88,7 +88,7 @@
   font-size: 0.64rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  border-bottom: 1px solid rgba(59, 36, 24, 0.4);
+  border-bottom: 1px solid rgba(51, 26, 1, 0.4);
   padding-bottom: 4px;
 }
 
@@ -96,14 +96,14 @@
   position: relative;
   min-height: 100svh;
   overflow: hidden;
-  background: #d8c4ad;
+  background: #e0cfbd;
 }
 
 .image {
   object-fit: cover;
   object-position: 67% center;
   transform: scale(1.08);
-  filter: saturate(0.86) contrast(0.98);
+  filter: saturate(0.8) contrast(1.01) sepia(0.08);
 }
 
 .media::before {
@@ -113,8 +113,8 @@
   z-index: 1;
   pointer-events: none;
   background:
-    linear-gradient(90deg, rgba(251, 246, 242, 0.3), transparent 18%),
-    linear-gradient(180deg, rgba(28, 20, 15, 0.08), transparent 24%, transparent 76%, rgba(20, 15, 12, 0.16));
+    linear-gradient(90deg, rgba(246, 242, 239, 0.3), transparent 18%),
+    linear-gradient(180deg, rgba(45, 12, 23, 0.08), transparent 24%, transparent 76%, rgba(51, 26, 1, 0.18));
 }
 
 .caption {
@@ -125,8 +125,8 @@
   display: flex;
   flex-direction: column;
   gap: 5px;
-  color: rgba(251, 246, 242, 0.88);
-  text-shadow: 0 1px 20px rgba(0, 0, 0, 0.2);
+  color: rgba(246, 242, 239, 0.9);
+  text-shadow: 0 1px 20px rgba(51, 26, 1, 0.24);
 }
 
 .caption span {
