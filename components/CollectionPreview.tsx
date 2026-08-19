@@ -4,31 +4,31 @@ import styles from "./CollectionPreview.module.css";
 const pieces = [
   {
     number: "01",
-    title: "Walnut Necklaces",
-    category: "Necklaces",
+    title: "Tiger's Eye and Faux Pearl Ring Collection",
+    category: "Rings",
     image: "/images/aje-bumi/walnut-necklaces.png.JPG",
-    alt: "Gold necklaces with warm brown stone pendants styled against a natural stone surface",
+    alt: "Tiger's eye and faux pearl rings styled against a natural stone surface",
   },
   {
     number: "02",
-    title: "Variety Ring Set",
+    title: "Variety Ring Collection",
     category: "Rings",
     image: "/images/aje-bumi/variety-ring-set.png.JPG",
-    alt: "Assorted gold, pearl, and dark stone rings arranged in an editorial still life",
+    alt: "Assorted rings arranged in an editorial still life",
   },
   {
     number: "03",
-    title: "Brown + Pearl",
-    category: "Adornment",
+    title: "Tiger's Eye and Faux Pearl Ring Collection",
+    category: "Rings",
     image: "/images/aje-bumi/brown-pearl-rings.png.JPG",
-    alt: "Gold pieces with brown stone and pearl details displayed on clear glass",
+    alt: "Tiger's eye and faux pearl rings displayed on clear glass",
   },
   {
     number: "04",
-    title: "Gold Bracelet",
+    title: "Variety Bracelet Stack Collection",
     category: "Bracelets",
     image: "/images/aje-bumi/gold-bracelet-product.png",
-    alt: "Gold bracelet photographed as a refined jewelry product study",
+    alt: "Variety bracelet stack photographed as a refined jewelry product study",
   },
 ];
 
