@@ -1,190 +1,129 @@
 .hero {
-  min-height: 100svh;
-  display: grid;
-  grid-template-columns: minmax(0, 0.82fr) minmax(520px, 1.18fr);
-  background: #f6f2ef;
-  border-bottom: 1px solid rgba(51, 26, 1, 0.14);
-  position: relative;
-}
-
-.copy {
-  padding: clamp(150px, 18vh, 205px) clamp(38px, 6vw, 96px) 72px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
-  z-index: 2;
-}
-
-.kicker {
-  margin: 0;
-  font-family: "Avenir Next", Avenir, "Helvetica Neue", Arial, sans-serif;
-  font-size: 0.68rem;
-  font-weight: 600;
-  letter-spacing: 0.24em;
-  text-transform: uppercase;
-  color: #a1734f;
-}
-
-.title {
-  margin: 26px 0 22px;
-  font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Baskerville, Georgia, serif;
-  font-size: clamp(4.4rem, 7.2vw, 8.2rem);
-  font-weight: 400;
-  letter-spacing: -0.055em;
-  line-height: 0.85;
-  color: #331a01;
-  max-width: 7ch;
-}
-
-.title em {
-  display: block;
-  margin-top: 0.18em;
-  font-weight: 400;
-  color: #963c1a;
-}
-
-.subline {
-  margin: 0 0 52px;
-  max-width: 22ch;
-  font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Baskerville, Georgia, serif;
-  font-size: clamp(1.2rem, 1.7vw, 1.65rem);
-  line-height: 1.45;
-  font-style: italic;
-  color: #a1734f;
-}
-
-.actions {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-
-.primary {
-  display: inline-flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 36px;
-  min-width: 245px;
-  padding: 16px 18px;
-  border: 1px solid rgba(51, 26, 1, 0.42);
-  font-family: "Avenir Next", Avenir, "Helvetica Neue", Arial, sans-serif;
-  font-size: 0.66rem;
-  font-weight: 600;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  transition: background 180ms ease, color 180ms ease, border-color 180ms ease;
-}
-
-.primary:hover {
-  background: #331a01;
-  border-color: #331a01;
-  color: #f6f2ef;
-}
-
-.secondary {
-  font-family: "Avenir Next", Avenir, "Helvetica Neue", Arial, sans-serif;
-  font-size: 0.64rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  border-bottom: 1px solid rgba(51, 26, 1, 0.4);
-  padding-bottom: 4px;
-}
-
-.media {
   position: relative;
   min-height: 100svh;
   overflow: hidden;
-  background: #e0cfbd;
+  display: grid;
+  align-items: end;
+  background: #2e1813;
+  isolation: isolate;
 }
 
 .image {
   object-fit: cover;
-  object-position: 67% center;
-  transform: scale(1.08);
-  filter: saturate(0.8) contrast(1.01) sepia(0.08);
+  object-position: center;
+  z-index: -3;
+  transform: scale(1.02);
+  filter: saturate(.92) contrast(1.04) brightness(.82);
 }
 
-.media::before {
-  content: "";
+.overlay {
   position: absolute;
   inset: 0;
-  z-index: 1;
-  pointer-events: none;
+  z-index: -2;
   background:
-    linear-gradient(90deg, rgba(246, 242, 239, 0.3), transparent 18%),
-    linear-gradient(180deg, rgba(45, 12, 23, 0.08), transparent 24%, transparent 76%, rgba(51, 26, 1, 0.18));
+    radial-gradient(circle at 76% 24%, rgba(226, 199, 152, .08), transparent 26%),
+    linear-gradient(90deg, rgba(46, 24, 19, .86) 0%, rgba(46, 24, 19, .62) 34%, rgba(46, 24, 19, .18) 63%, rgba(46, 24, 19, .34) 100%),
+    linear-gradient(180deg, rgba(42, 40, 40, .14) 0%, transparent 38%, rgba(46, 24, 19, .62) 100%);
 }
 
-.caption {
-  position: absolute;
-  z-index: 2;
-  left: 34px;
-  bottom: 32px;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  color: rgba(246, 242, 239, 0.9);
-  text-shadow: 0 1px 20px rgba(51, 26, 1, 0.24);
+.copy {
+  width: min(980px, calc(100% - 48px));
+  padding: 0 clamp(28px, 5vw, 82px) clamp(64px, 9vh, 112px);
+  color: #f3efe7;
 }
 
-.caption span {
-  font-size: 0.58rem;
-  letter-spacing: 0.21em;
+.house {
+  margin: 0 0 38px;
+  font-size: .61rem;
+  letter-spacing: .34em;
   text-transform: uppercase;
+  color: rgba(243, 239, 231, .78);
 }
 
-.caption small {
+.kicker {
+  margin: 0;
+  font-size: .66rem;
+  font-weight: 600;
+  letter-spacing: .23em;
+  text-transform: uppercase;
+  color: #e2c798;
+}
+
+.title {
+  margin: 22px 0 24px;
+  max-width: 7.7ch;
   font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Baskerville, Georgia, serif;
-  font-size: 0.82rem;
-  font-style: italic;
+  font-size: clamp(4.7rem, 9vw, 10rem);
+  font-weight: 400;
+  letter-spacing: -.06em;
+  line-height: .8;
+  text-wrap: balance;
 }
 
-@media (max-width: 980px) {
-  .hero {
-    grid-template-columns: 1fr;
-  }
-
-  .copy {
-    min-height: 66svh;
-    padding-top: 130px;
-  }
-
-  .media {
-    min-height: 68svh;
-  }
-
-  .image {
-    object-position: 66% center;
-  }
+.title em {
+  display: block;
+  margin-top: .16em;
+  font-weight: 400;
+  color: #d9b0a7;
 }
 
-@media (max-width: 640px) {
+.subline {
+  max-width: 600px;
+  margin: 0 0 48px;
+  font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Baskerville, Georgia, serif;
+  font-size: clamp(1.08rem, 1.8vw, 1.45rem);
+  line-height: 1.5;
+  color: rgba(243, 239, 231, .78);
+}
+
+.enter {
+  width: min(360px, 100%);
+  padding: 17px 0;
+  border-top: 1px solid rgba(226, 199, 152, .7);
+  border-bottom: 1px solid rgba(226, 199, 152, .7);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: .64rem;
+  font-weight: 600;
+  letter-spacing: .23em;
+  text-transform: uppercase;
+  color: #f3efe7;
+  transition: padding 180ms ease, color 180ms ease;
+}
+
+.enter:hover {
+  padding-left: 12px;
+  padding-right: 12px;
+  color: #e2c798;
+}
+
+.edgeNote {
+  position: absolute;
+  right: 28px;
+  bottom: 52px;
+  display: flex;
+  gap: 9px;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: .52rem;
+  letter-spacing: .2em;
+  color: rgba(243, 239, 231, .56);
+}
+
+@media (max-width: 760px) {
+  .hero { min-height: 100svh; }
+  .image { object-position: 62% center; }
+  .overlay {
+    background:
+      linear-gradient(180deg, rgba(46, 24, 19, .28) 0%, rgba(46, 24, 19, .48) 44%, rgba(46, 24, 19, .88) 100%);
+  }
   .copy {
-    min-height: 72svh;
-    padding: 122px 24px 52px;
-  }
-
-  .title {
-    font-size: clamp(3.7rem, 17vw, 5.8rem);
-  }
-
-  .actions {
-    align-items: flex-start;
-    flex-direction: column;
-  }
-
-  .primary {
     width: 100%;
+    padding: 0 24px 52px;
   }
-
-  .media {
-    min-height: 58svh;
-  }
-
-  .caption {
-    left: 24px;
-    bottom: 24px;
-  }
+  .house { margin-bottom: 26px; }
+  .title { font-size: clamp(4rem, 18vw, 6.3rem); max-width: 6.4ch; }
+  .subline { max-width: 31ch; margin-bottom: 34px; }
+  .edgeNote { display: none; }
 }
