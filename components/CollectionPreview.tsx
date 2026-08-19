@@ -1,43 +1,76 @@
-const cards = [
-  { number: "01", title: "The First Offering", note: "Collection imagery forthcoming" },
-  { number: "02", title: "Objects of Adornment", note: "Product details forthcoming" },
-  { number: "03", title: "Made to Be Kept", note: "Private preview forthcoming" },
+import Image from "next/image";
+import styles from "./CollectionPreview.module.css";
+
+const pieces = [
+  {
+    number: "01",
+    title: "Walnut Necklaces",
+    category: "Necklaces",
+    image: "/images/aje-bumi/walnut-necklaces.png.JPG",
+    alt: "Gold necklaces with warm brown stone pendants styled against a natural stone surface",
+  },
+  {
+    number: "02",
+    title: "Variety Ring Set",
+    category: "Rings",
+    image: "/images/aje-bumi/variety-ring-set.png.JPG",
+    alt: "Assorted gold, pearl, and dark stone rings arranged in an editorial still life",
+  },
+  {
+    number: "03",
+    title: "Brown + Pearl",
+    category: "Adornment",
+    image: "/images/aje-bumi/brown-pearl-rings.png.JPG",
+    alt: "Gold pieces with brown stone and pearl details displayed on clear glass",
+  },
+  {
+    number: "04",
+    title: "Gold Bracelet",
+    category: "Bracelets",
+    image: "/images/aje-bumi/gold-bracelet-product.png",
+    alt: "Gold bracelet photographed as a refined jewelry product study",
+  },
 ];
 
 export function CollectionPreview() {
   return (
-    <section className="collection section" id="collection">
-      <div className="collection-heading">
+    <section className={styles.section} id="collection">
+      <div className={styles.heading}>
         <div>
-          <p className="eyebrow">Adornment</p>
-          <h2>Objects for moments that matter.</h2>
+          <p className="eyebrow">The Shop Preview</p>
+          <h2>A first look at the collection.</h2>
         </div>
-        <p className="collection-note">
-          The collection will enter here once final product photography, names, materials, and
-          approved product language are received.
+        <p className={styles.note}>
+          An early edit of Ajé Bumi adornment — warm metals, luminous pearl, and earth-toned stones
+          selected to feel collected rather than consumed.
         </p>
       </div>
 
-      <div className="collection-grid">
-        {cards.map((card, index) => (
-          <article className="collection-card" key={card.number}>
-            <div className={`product-placeholder product-${index + 1}`}>
-              <span className="product-number">{card.number}</span>
-              <div className="product-shape" />
-              <small>APPROVED PRODUCT IMAGE</small>
+      <div className={styles.grid}>
+        {pieces.map((piece) => (
+          <article className={styles.card} key={piece.number}>
+            <div className={styles.imageWrap}>
+              <Image
+                className={styles.image}
+                src={piece.image}
+                alt={piece.alt}
+                fill
+                sizes="(max-width: 720px) 100vw, (max-width: 1050px) 50vw, 25vw"
+              />
+              <span className={styles.number}>{piece.number}</span>
             </div>
-            <div className="product-caption">
-              <h3>{card.title}</h3>
-              <p>{card.note}</p>
+            <div className={styles.caption}>
+              <h3>{piece.title}</h3>
+              <p>{piece.category}</p>
             </div>
           </article>
         ))}
       </div>
 
-      <div className="collection-footer">
-        <span className="hairline dark" />
-        <a href="#private-access">Join the list for private access</a>
-        <span className="hairline dark" />
+      <div className={styles.footer}>
+        <span className={styles.line} />
+        <a href="#private-access">Private access to the first offering</a>
+        <span className={styles.line} />
       </div>
     </section>
   );
