@@ -1,0 +1,153 @@
+:root {
+  --espresso: #331a01;
+  --dark-walnut: #331a01;
+  --walnut: #331a01;
+  --cocoa: #6f4b35;
+  --taupe: #a1734f;
+  --clay: #a1734f;
+  --terracotta: #963c1a;
+  --ivory: #f6f2ef;
+  --cream: #eee4da;
+  --warm-ivory: #e0cfbd;
+  --bone: #f6f2ef;
+  --linen: #e9dfd4;
+  --sage: #564c29;
+  --moss: #453b20;
+  --bare-blush: #c28e80;
+  --soft-blush: #c28e80;
+  --antique-gold: #b37731;
+  --brushed-gold: #c58b43;
+  --midnight-ocean: #2d0c17;
+  --indigo-night: #331a01;
+  --line: rgba(51, 26, 1, 0.17);
+}
+
+html,
+body,
+.hero,
+.story-hero {
+  background: var(--bone);
+}
+
+::selection {
+  background: var(--warm-ivory);
+  color: var(--walnut);
+}
+
+.site-header {
+  border-bottom-color: rgba(51, 26, 1, 0.14);
+}
+
+.hero-visual {
+  background:
+    radial-gradient(circle at 68% 24%, rgba(246, 242, 239, .72) 0 8%, transparent 29%),
+    linear-gradient(138deg, #e0cfbd 0%, #f6f2ef 32%, #c28e80 67%, #a1734f 100%);
+}
+
+.collage-image.portrait {
+  background:
+    radial-gradient(circle at 48% 24%, rgba(246,242,239,.72) 0 9%, transparent 30%),
+    linear-gradient(150deg, #331a01 0 23%, #963c1a 52%, #c28e80 100%);
+}
+
+.collage-image.portrait::after {
+  background: linear-gradient(170deg, rgba(51,26,1,.84), rgba(161,115,79,.24));
+}
+
+.collage-image.blush {
+  background:
+    linear-gradient(130deg, rgba(246,242,239,.52), transparent 34%),
+    linear-gradient(35deg, #e0cfbd, #c28e80);
+}
+
+.collage-image.pearl {
+  background: linear-gradient(145deg, #d5c5b6, #f6f2ef);
+}
+
+.collage-image.pearl::before,
+.collage-image.pearl::after {
+  background: radial-gradient(circle at 36% 30%, #fff 0 12%, #f6f2ef 36%, #d5c5b6 100%);
+}
+
+.product-1 {
+  background: linear-gradient(150deg, #f6f2ef, #d5c5b6);
+}
+
+.product-2 {
+  background: linear-gradient(150deg, #e0cfbd, #c28e80);
+}
+
+.product-3 {
+  background: linear-gradient(150deg, #8b8563, #564c29);
+}
+
+.ocean {
+  background:
+    radial-gradient(circle at 74% 28%, rgba(179,119,49,.18), transparent 31%),
+    linear-gradient(160deg, #331a01 0%, #2d0c17 52%, #1d080f 100%);
+}
+
+.ocean blockquote span,
+.story-memory blockquote span {
+  color: #e0cfbd;
+}
+
+.story-hero-visual {
+  background:
+    radial-gradient(circle at 70% 25%, rgba(246,242,239,.66) 0 10%, transparent 31%),
+    linear-gradient(145deg, #e0cfbd 0%, #d5c5b6 36%, #a1734f 72%, #963c1a 100%);
+}
+
+.story-orbit {
+  border-color: rgba(179,119,49,.84);
+}
+
+.story-orbit-two {
+  background: rgba(179,119,49,.13);
+}
+
+.story-visual-label,
+.story-values-grid p,
+.story-closing > p:last-child,
+.body-copy {
+  color: rgba(51,26,1,.7);
+}
+
+.story-memory {
+  background:
+    radial-gradient(circle at 50% 20%, rgba(179,119,49,.16), transparent 34%),
+    linear-gradient(160deg, #331a01 0%, #2d0c17 58%, #1d080f 100%);
+}
+
+.story-memory-inner > p:last-child {
+  color: rgba(246,242,239,.74);
+}
+
+.story-closing {
+  background: var(--warm-ivory);
+}
+
+.newsletter {
+  background: var(--bone);
+}
+
+.newsletter input {
+  border-color: rgba(51,26,1,.28);
+  color: var(--walnut);
+}
+
+.newsletter button {
+  background: var(--walnut);
+  color: var(--bone);
+  border-color: var(--walnut);
+}
+
+.newsletter button:hover {
+  background: var(--deep-plum, #2d0c17);
+  border-color: var(--deep-plum, #2d0c17);
+}
+
+.footer {
+  background: var(--walnut);
+  color: var(--bone);
+}
