@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import "./palette.css";
+import "./visuals.css";
 
 export const metadata: Metadata = {
   title: "Ajé Bumi | Adornment, memory, and becoming",
