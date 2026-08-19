@@ -24,12 +24,9 @@ export default function OurStoryPage() {
           </p>
         </div>
 
-        <div className="story-hero-visual" aria-hidden="true">
-          <div className="story-orbit story-orbit-one" />
-          <div className="story-orbit story-orbit-two" />
-          <div className="story-veil story-veil-one" />
-          <div className="story-veil story-veil-two" />
-          <span className="story-visual-label">RETURN · REMEMBER · BECOME</span>
+        <div className="story-hero-visual story-photo" aria-label="Ajé Bumi sacred feminine editorial">
+          <img src="/images/aje-bumi/golden-hour-ritual.png" alt="Sacred feminine figure in golden-hour light and adornment" />
+          <span className="story-visual-label">ROOTED IN AJÉ · EXPRESSED IN HER</span>
         </div>
       </section>
 
@@ -60,6 +57,17 @@ export default function OurStoryPage() {
             </p>
           </div>
         </div>
+
+        <div className="story-image-pair">
+          <figure className="story-image story-image-wide">
+            <img src="/images/aje-bumi/golden-lotus-floating.png" alt="Lotus floating in golden water" />
+            <figcaption>Return · Renewal · Remembrance</figcaption>
+          </figure>
+          <figure className="story-image story-image-tall">
+            <img src="/images/aje-bumi/golden-magnolia-heirloom.png" alt="Magnolia still life in warm natural light" />
+            <figcaption>Beauty held with intention</figcaption>
+          </figure>
+        </div>
       </section>
 
       <section className="story-memory">
@@ -89,39 +97,16 @@ export default function OurStoryPage() {
         </div>
 
         <div className="story-values-grid">
-          <article>
-            <span>01</span>
-            <h3>Inner Child</h3>
-            <p>
-              Honoring the dreams that came before fear, and understanding they were never too big
-              or too unrealistic to pursue.
-            </p>
-          </article>
-          <article>
-            <span>02</span>
-            <h3>Wholeness</h3>
-            <p>
-              Adulthood does not require abandoning younger versions of the self. Young and old can
-              exist together as equally real parts of one person.
-            </p>
-          </article>
-          <article>
-            <span>03</span>
-            <h3>Wonder</h3>
-            <p>
-              Reclaiming childlike creativity, imagination, and curiosity before the world teaches
-              us what to fear.
-            </p>
-          </article>
-          <article>
-            <span>04</span>
-            <h3>Discernment</h3>
-            <p>
-              Learning that what feels like denial can sometimes be protection — and that not every
-              desired outcome is meant to be possessed.
-            </p>
-          </article>
+          <article><span>01</span><h3>Inner Child</h3><p>Honoring the dreams that came before fear, and understanding they were never too big or too unrealistic to pursue.</p></article>
+          <article><span>02</span><h3>Wholeness</h3><p>Adulthood does not require abandoning younger versions of the self. Young and old can exist together as equally real parts of one person.</p></article>
+          <article><span>03</span><h3>Wonder</h3><p>Reclaiming childlike creativity, imagination, and curiosity before the world teaches us what to fear.</p></article>
+          <article><span>04</span><h3>Discernment</h3><p>Learning that what feels like denial can sometimes be protection — and that not every desired outcome is meant to be possessed.</p></article>
         </div>
+
+        <figure className="story-image story-image-cinematic">
+          <img src="/images/aje-bumi/sunlit-tigers-eye-still-life.png" alt="Ajé Bumi still life with warm earth-toned materials" />
+          <figcaption>Earth · Light · Adornment</figcaption>
+        </figure>
       </section>
 
       <section className="story-manifesto section">
@@ -135,20 +120,9 @@ export default function OurStoryPage() {
           <p className="eyebrow">The Voice</p>
           <h2>The woman being called forward.</h2>
           <div className="story-editorial-copy">
-            <p className="serif-intro">
-              The Oracle best represents the voice of Ajé Bumi because she reflects the woman the
-              founder is being called to become.
-            </p>
-            <p className="body-copy">
-              There is power in the tongue. Used wisely, that voice can become a channel for
-              knowledge, wisdom, and service — not only for the self, but for those one is being
-              called to assist.
-            </p>
-            <p className="body-copy">
-              The symbols within Ajé Bumi come from the founder&apos;s actual spiritual practice. Each
-              one was chosen because it has been used, encountered, or held meaning in real life.
-              Authenticity is not decoration here; it is the point.
-            </p>
+            <p className="serif-intro">The Oracle best represents the voice of Ajé Bumi because she reflects the woman the founder is being called to become.</p>
+            <p className="body-copy">There is power in the tongue. Used wisely, that voice can become a channel for knowledge, wisdom, and service — not only for the self, but for those one is being called to assist.</p>
+            <p className="body-copy">The symbols within Ajé Bumi come from the founder&apos;s actual spiritual practice. Each one was chosen because it has been used, encountered, or held meaning in real life. Authenticity is not decoration here; it is the point.</p>
           </div>
         </div>
       </section>
@@ -156,14 +130,8 @@ export default function OurStoryPage() {
       <section className="story-closing">
         <p className="eyebrow">AJÉ BUMI</p>
         <h2>Purpose before performance.</h2>
-        <p>
-          Ajé Bumi exists to make room for needs the founder has felt herself as a spiritualist — a
-          brand with intention behind it, not a money grab. The hope is that every person who enters
-          this world can feel who it is for, what it stands for, and the care behind why it exists.
-        </p>
-        <p className="serif-intro" style={{ margin: "38px auto 0" }}>
-          Welcome home.
-        </p>
+        <p>Ajé Bumi exists to make room for needs the founder has felt herself as a spiritualist — a brand with intention behind it, not a money grab. The hope is that every person who enters this world can feel who it is for, what it stands for, and the care behind why it exists.</p>
+        <p className="serif-intro" style={{ margin: "38px auto 0" }}>Welcome home.</p>
       </section>
 
       <Newsletter />
