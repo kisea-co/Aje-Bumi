@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styles from "./Hero.module.css";
 
 export function Hero() {
@@ -18,6 +19,21 @@ export function Hero() {
           <a className={styles.secondary} href="#collection">
             Discover the first offering
           </a>
+        </div>
+      </div>
+
+      <div className={styles.media}>
+        <Image
+          className={styles.image}
+          src="/images/aje-bumi/hero/aje-bumi-hero.png"
+          alt="Ajé Bumi editorial still life rooted in water, earth, ritual, and adornment"
+          fill
+          priority
+          sizes="(max-width: 980px) 100vw, 58vw"
+        />
+        <div className={styles.caption}>
+          <span>Water · Earth · Adornment</span>
+          <small>A world shaped around Ajé.</small>
         </div>
       </div>
     </section>
