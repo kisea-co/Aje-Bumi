@@ -27,10 +27,19 @@ export function SacredFeminine() {
           </div>
         </div>
 
-        <div className="sacred-collage" aria-label="Sacred Feminine material and atmosphere studies">
-          <div className="collage-image water-study"><span>01 · WATER</span></div>
-          <div className="collage-image silk-study"><span>02 · SILK</span></div>
-          <div className="collage-image pearl"><span>03 · PEARL</span></div>
+        <div className="sacred-collage visual-collage" aria-label="Sacred Feminine editorial studies">
+          <div className="visual-tile primary">
+            <img src="/images/aje-bumi/golden-hour-ritual.png" alt="Sacred feminine figure in golden-hour light" />
+            <span>01 · ADORNMENT</span>
+          </div>
+          <div className="visual-tile">
+            <img src="/images/aje-bumi/golden-magnolia-heirloom.png" alt="Magnolia in warm natural light" />
+            <span>02 · BLOOM</span>
+          </div>
+          <div className="visual-tile">
+            <img src="/images/aje-bumi/sunlit-tigers-eye-still-life.png" alt="Earth-toned Ajé Bumi still life" />
+            <span>03 · EARTH</span>
+          </div>
         </div>
       </div>
     </section>
