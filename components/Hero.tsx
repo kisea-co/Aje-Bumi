@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "./Hero.module.css";
 
 export function Hero() {
@@ -19,21 +18,6 @@ export function Hero() {
           <a className={styles.secondary} href="#collection">
             Discover the first offering
           </a>
-        </div>
-      </div>
-
-      <div className={styles.media}>
-        <Image
-          className={styles.image}
-          src="/images/aje-bumi/hero/hero-house-of-aje.png"
-          alt="Ajé Bumi still life with shell, gold adornment, linen, stone, and ocean water"
-          fill
-          priority
-          sizes="(max-width: 980px) 100vw, 58vw"
-        />
-        <div className={styles.caption}>
-          <span>Water · Memory · Adornment</span>
-          <small>A return to what has always been.</small>
         </div>
       </div>
     </section>
