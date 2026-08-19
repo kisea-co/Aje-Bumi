@@ -58,15 +58,13 @@ export default function OurStoryPage() {
           </div>
         </div>
 
-        <div className="story-image-pair">
-          <figure className="story-image story-image-wide">
-            <img src="/images/aje-bumi/golden-lotus-floating.png" alt="Lotus floating in golden water" />
-            <figcaption>Return · Renewal · Remembrance</figcaption>
-          </figure>
-          <figure className="story-image story-image-tall">
+        <div className="story-single-visual">
+          <figure>
             <img src="/images/aje-bumi/golden-magnolia-heirloom.png" alt="Magnolia still life in warm natural light" />
-            <figcaption>Beauty held with intention</figcaption>
           </figure>
+          <div className="story-single-note">
+            <p>Beauty held with intention. Softness, memory, and return without excess.</p>
+          </div>
         </div>
       </section>
 
