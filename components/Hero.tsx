@@ -4,37 +4,42 @@ import styles from "./Hero.module.css";
 export function Hero() {
   return (
     <section className={styles.hero}>
+      <Image
+        className={styles.image}
+        src="/images/aje-bumi/hero/aje-bumi-hero.png"
+        alt="Ajé Bumi editorial world of water, earth, ritual, and adornment"
+        fill
+        priority
+        sizes="100vw"
+      />
+
+      <div className={styles.overlay} aria-hidden="true" />
+
       <div className={styles.copy}>
-        <p className={styles.kicker}>Rooted in ocean · Guided by ancestry</p>
+        <p className={styles.house}>THE HOUSE OF AJÉ BUMI</p>
+        <p className={styles.kicker}>Rooted in Ajé · Expressed in Her</p>
+
         <h1 className={styles.title}>
           Adornment for
           <em>the woman becoming.</em>
         </h1>
-        <p className={styles.subline}>Grace as a form of power.</p>
 
-        <div className={styles.actions}>
-          <a className={styles.primary} href="#world">
-            Enter the house <span aria-hidden="true">→</span>
-          </a>
-          <a className={styles.secondary} href="#collection">
-            Discover the first offering
-          </a>
-        </div>
+        <p className={styles.subline}>
+          A world of water, memory, feminine divinity, and the beauty of returning to what was always within.
+        </p>
+
+        <a className={styles.enter} href="#world">
+          <span>Enter the house</span>
+          <span aria-hidden="true">↓</span>
+        </a>
       </div>
 
-      <div className={styles.media}>
-        <Image
-          className={styles.image}
-          src="/images/aje-bumi/hero/aje-bumi-hero.png"
-          alt="Ajé Bumi editorial still life rooted in water, earth, ritual, and adornment"
-          fill
-          priority
-          sizes="(max-width: 980px) 100vw, 58vw"
-        />
-        <div className={styles.caption}>
-          <span>Water · Earth · Adornment</span>
-          <small>A world shaped around Ajé.</small>
-        </div>
+      <div className={styles.edgeNote} aria-hidden="true">
+        <span>WATER</span>
+        <span>·</span>
+        <span>WOMAN</span>
+        <span>·</span>
+        <span>ADORNMENT</span>
       </div>
     </section>
   );
