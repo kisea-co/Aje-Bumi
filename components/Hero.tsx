@@ -3,43 +3,26 @@ import styles from "./Hero.module.css";
 
 export function Hero() {
   return (
-    <section className={styles.hero}>
+    <section className={styles.hero} aria-label="The House of Ajé Bumi">
       <Image
         className={styles.image}
         src="/images/aje-bumi/hero/aje-bumi-hero.png"
-        alt="Ajé Bumi editorial world of water, earth, ritual, and adornment"
+        alt="Ajé Bumi editorial world shaped by water, earth, and sacred feminine symbolism"
         fill
         priority
         sizes="100vw"
       />
-
       <div className={styles.overlay} aria-hidden="true" />
 
       <div className={styles.copy}>
         <p className={styles.house}>THE HOUSE OF AJÉ BUMI</p>
-        <p className={styles.kicker}>Rooted in Ajé · Expressed in Her</p>
-
-        <h1 className={styles.title}>
-          Adornment for
-          <em>the woman becoming.</em>
-        </h1>
-
-        <p className={styles.subline}>
-          A world of water, memory, feminine divinity, and the beauty of returning to what was always within.
-        </p>
-
-        <a className={styles.enter} href="#world">
-          <span>Enter the house</span>
-          <span aria-hidden="true">↓</span>
-        </a>
+        <h1 className={styles.title}>The story. The symbol. <em>The heirloom.</em></h1>
+        <p className={styles.subline}>For the Sacred Feminine — in all her forms.</p>
       </div>
 
-      <div className={styles.edgeNote} aria-hidden="true">
-        <span>WATER</span>
-        <span>·</span>
-        <span>WOMAN</span>
-        <span>·</span>
-        <span>ADORNMENT</span>
+      <div className={styles.scrollCue} aria-hidden="true">
+        <span>Discover</span>
+        <i />
       </div>
     </section>
   );
